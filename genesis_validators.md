@@ -1,15 +1,17 @@
-# Welcome Genesis Validators!
+# Set up a Genesis Side Chain Validator
 
-We are preparing to launch the genesis process for the Side Chain mainnet. Selected validators can participate in the mainnet genesis event. The main communication point during the genesis process will be the #genesis-mainnet channel on the [SideChain Discord](https://discord.gg/sideprotocol). It is absolutely critical that you and your team join Discord during the launch period, as it will serve as the coordination point in the event of any issues during the launch process. The channel is private by default to ensure that it is free from spam and unnecessary noise.
+We are excited to announce the upcoming genesis process for the Side Chain mainnet. Thank you for joining as a genesis validator. Below are instructions for submitting your GenTx and starting the network.
 
-#### The deadline for submitting a Gentx PR is Thusday, Jan 23 at 13:00 UTC 2025.
+To ensure seamless coordination, the #genesis-mainnet channel on our [Side Protocol Discord](https://discord.gg/sideprotocol) will serve as the primary communication hub. The channel is private—please contact Sally on Discord to gain access. Joining Discord during this period is crucial, as it will be the central platform for updates and issue resolution throughout the launch process.
+
+#### The deadline for submitting your GenTx PR is Thursday, Jan 23, 2025, at 13:00 UTC.
 
 #### The pre-genesis event is broken into two parts:
 
 -   [Part 1](/genesis_validators.md#part-1): Preparing gentx
 -   [Part 2](/genesis_validators.md#part-2): Submitting gentx PR
 
-After Gentxs are collected we will provide a genesis.json file for review. As long as there are no recommended changes we will provide the Genesis file after the collection of Gentxs.
+After collecting all GenTx submissions, we will share the genesis.json file for review. If no changes are recommended during the review period, the finalized Genesis file will be released shortly after.
 
 **Recommended minimum hardware requirements:**
 
