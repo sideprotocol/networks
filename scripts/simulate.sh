@@ -26,20 +26,22 @@ curTime=$(date --date="$current" +%s)
 if [[ $curTime < $stTime ]]; then
     echo "start=$stTime:curent=$curTime:endTime=$endTime"
     echo "Gentx submission is not open yet. Please close the PR and raise a new PR after 04-June-2021 23:59:59"
-    exit 0
+    exit 1
 else
     if [[ $curTime > $endTime ]]; then
         echo "start=$stTime:curent=$curTime:endTime=$endTime"
         echo "Gentx submission is closed"
-        exit 0
+        exit 1
     else
         echo "Gentx is now open"
         echo "start=$stTime:curent=$curTime:endTime=$endTime"
+        exit 1
     fi
 fi
 
 if [ $LEN_GENTX -eq 0 ]; then
     echo "No new gentx file found."
+    exit 1
 else
     set -e
 
