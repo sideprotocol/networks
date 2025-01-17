@@ -14,22 +14,7 @@
         "sig_verify_cost_ed25519": "590",
         "sig_verify_cost_secp256k1": "1000"
       },
-      "accounts": [
-        {
-          "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "bc1q6gquha2fvtmu0xguxjdnsp8wyl4pdtkjdu6c0g",
-          "pub_key": null,
-          "account_number": "0",
-          "sequence": "0"
-        },
-        {
-          "@type": "/cosmos.auth.v1beta1.BaseAccount",
-          "address": "bc1qxrwympr3cs6gru79dqcyvdqezjuea3k06lqwe9",
-          "pub_key": null,
-          "account_number": "1",
-          "sequence": "0"
-        }
-      ]
+      "accounts": []
     },
     "authz": {
       "authorization": []
@@ -39,26 +24,7 @@
         "send_enabled": [],
         "default_send_enabled": true
       },
-      "balances": [
-        {
-          "address": "bc1qxrwympr3cs6gru79dqcyvdqezjuea3k06lqwe9",
-          "coins": [
-            {
-              "denom": "uside",
-              "amount": "500000000000000"
-            }
-          ]
-        },
-        {
-          "address": "bc1q6gquha2fvtmu0xguxjdnsp8wyl4pdtkjdu6c0g",
-          "coins": [
-            {
-              "denom": "uside",
-              "amount": "500000000000000"
-            }
-          ]
-        }
-      ],
+      "balances": [],
       "supply": [
         {
           "denom": "uside",
@@ -119,19 +85,19 @@
         "deposit_enabled": true,
         "withdraw_enabled": true,
         "trusted_non_btc_relayers": [
-          "[RunesRelayer1]",
-          "[RunesRelayer2]",
-          "[RunesRelayer3]"
+          "bc1quy793d7p3r9qvcupfzp6j9yzateqsvpvmavsxr",
+          "bc1qq6yqtqsxhxjzxjsvmp5luxh5p5tt9j6kpvpn6n",
+          "bc1qqv2durxvr8dmadsw664ln03wvxtt7a3mh03kcu"
         ],
         "trusted_btc_relayers": [
-          "[BTCRelayer1]",
-          "[BTCRelayer2]",
-          "[BTCRelayer3]"
+          "bc1quy793d7p3r9qvcupfzp6j9yzateqsvpvmavsxr",
+          "bc1qq6yqtqsxhxjzxjsvmp5luxh5p5tt9j6kpvpn6n",
+          "bc1qqv2durxvr8dmadsw664ln03wvxtt7a3mh03kcu"
         ],
         "trusted_fee_providers": [
-          "[FeeProvider1]",
-          "[FeeProvider2]",
-          "[FeeProvider3]"
+          "bc1quy793d7p3r9qvcupfzp6j9yzateqsvpvmavsxr",
+          "bc1qq6yqtqsxhxjzxjsvmp5luxh5p5tt9j6kpvpn6n",
+          "bc1qqv2durxvr8dmadsw664ln03wvxtt7a3mh03kcu"
         ],
         "fee_rate_validity_period": "100",
         "vaults": [],
@@ -206,70 +172,7 @@
       "allowances": []
     },
     "genutil": {
-      "gen_txs": [
-        {
-          "body": {
-            "messages": [
-              {
-                "@type": "/cosmos.staking.v1beta1.MsgCreateValidator",
-                "description": {
-                  "moniker": "Side Labs",
-                  "identity": "666AC57CC678BEC4",
-                  "website": "https://side.one",
-                  "security_contact": "",
-                  "details": ""
-                },
-                "commission": {
-                  "rate": "0.100000000000000000",
-                  "max_rate": "0.200000000000000000",
-                  "max_change_rate": "0.010000000000000000"
-                },
-                "min_self_delegation": "1",
-                "delegator_address": "",
-                "validator_address": "sidevaloper1qqdqsqquzuws5zgvpvd3crcxpqwqvysdzvgqzpcwqs032qgdpvtpytc8xuu",
-                "pubkey": {
-                  "@type": "/cosmos.crypto.ed25519.PubKey",
-                  "key": "wb21vI5Le8lEHyxR6YipkoF3tyhaFos70XjTPD5N384="
-                },
-                "value": {
-                  "denom": "uside",
-                  "amount": "500000000000000"
-                }
-              }
-            ],
-            "memo": "d6c0939b4ef4b46a852d0500ac71b4d8945f37ba@202.182.105.108:26656",
-            "timeout_height": "0",
-            "extension_options": [],
-            "non_critical_extension_options": []
-          },
-          "auth_info": {
-            "signer_infos": [
-              {
-                "public_key": {
-                  "@type": "/cosmos.crypto.segwit.PubKey",
-                  "key": "Atj3AKAkWxSkOtKGHwN2T4ZrhdvGDDbWjFQYCdMpPS3x"
-                },
-                "mode_info": {
-                  "single": {
-                    "mode": "SIGN_MODE_DIRECT"
-                  }
-                },
-                "sequence": "0"
-              }
-            ],
-            "fee": {
-              "amount": [],
-              "gas_limit": "200000",
-              "payer": "",
-              "granter": ""
-            },
-            "tip": null
-          },
-          "signatures": [
-            "H5p8gqsLPV4QgdO71KSnoSHiEBQ9crc9ttmVpP7XUbBeU0ghVYbl8gjXB/WhLHk2CTShY8wUsOD2PSW7p/YtIxc="
-          ]
-        }
-      ]
+      "gen_txs": []
     },
     "gov": {
       "starting_proposal_id": "1",
