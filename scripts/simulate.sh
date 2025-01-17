@@ -87,25 +87,25 @@ else
         exit 1
     fi
 
-    ./build/sided add-genesis-account $GENACC $amountquery$DENOM --home $APP_HOME \
+    ./build/sided genesis add-genesis-account $GENACC $amountquery$DENOM --home $APP_HOME \
         --keyring-backend test
 
-    ./build/sided add-genesis-account $RANDOM_KEY 10000000000000000$DENOM --home $APP_HOME \
+    ./build/sided genesis add-genesis-account $RANDOM_KEY 10000000000000000$DENOM --home $APP_HOME \
         --keyring-backend test
 
     #./build/sided add-genesis-account  $amountquery$DENOM --home $APP_HOME \
     #    --keyring-backend test
-    ./build/sided gentx $RANDOM_KEY 90000000000000$DENOM --home $APP_HOME \
+    ./build/sided genesis gentx $RANDOM_KEY 90000000000000$DENOM --home $APP_HOME \
         --keyring-backend test --chain-id $CHAIN_ID
 
     # rm $APP_HOME/config/gentx/*.json
     cp ../$GENTX_FILE $APP_HOME/config/gentx/
 
     echo "..........Collecting gentxs......."
-    ./build/sided collect-gentxs --home $APP_HOME
+    ./build/sided genesis collect-gentxs --home $APP_HOME
     # sed -i '/persistent_peers =/c\persistent_peers = ""' $APP_HOME/config/config.toml
 
-    ./build/sided validate-genesis --home $APP_HOME
+    ./build/sided genesis validate-genesis --home $APP_HOME
 
     echo "..........Starting node......."
     ./build/sided start --home $APP_HOME &
