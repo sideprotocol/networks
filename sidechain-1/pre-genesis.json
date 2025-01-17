@@ -1,7 +1,7 @@
 {
   "app_name": "sided",
-  "app_version": "v1.0.0",
-  "genesis_time": "2025-01-24T13:00:00Z",
+  "app_version": "1.0.0-rc.1",
+  "genesis_time": "2025-01-17T12:30:37.051887497Z",
   "chain_id": "sidechain-1",
   "initial_height": 1,
   "app_hash": null,
@@ -14,7 +14,15 @@
         "sig_verify_cost_ed25519": "590",
         "sig_verify_cost_secp256k1": "1000"
       },
-      "accounts": []
+      "accounts": [
+        {
+          "@type": "/cosmos.auth.v1beta1.BaseAccount",
+          "address": "bc1qwxt66ednz5cgx8jkerydx6zdp0qzwtaxrlpc4a",
+          "pub_key": null,
+          "account_number": "0",
+          "sequence": "0"
+        }
+      ]
     },
     "authz": {
       "authorization": []
@@ -24,81 +32,36 @@
         "send_enabled": [],
         "default_send_enabled": true
       },
-      "balances": [],
+      "balances": [
+        {
+          "address": "bc1qwxt66ednz5cgx8jkerydx6zdp0qzwtaxrlpc4a",
+          "coins": [
+            {
+              "denom": "uside",
+              "amount": "1000000000000"
+            }
+          ]
+        }
+      ],
       "supply": [
         {
           "denom": "uside",
-          "amount": "1000000000000000"
+          "amount": "1000000000000"
         }
       ],
-      "denom_metadata": [
-        {
-          "description": "Side Chain native token",
-          "denom_units": [
-            {
-              "denom": "uside",
-              "exponent": 0,
-              "aliases": []
-            },
-            {
-              "denom": "side",
-              "exponent": 6,
-              "aliases": []
-            }
-          ],
-          "base": "uside",
-          "display": "side",
-          "name": "Side Chain native token",
-          "symbol": "SIDE",
-          "uri": "",
-          "uri_hash": ""
-        },
-        {
-          "description": "BTC pegged token via the Side btc bridge",
-          "denom_units": [
-            {
-              "denom": "sat",
-              "exponent": 0,
-              "aliases": []
-            },
-            {
-              "denom": "sBTC",
-              "exponent": 8,
-              "aliases": []
-            }
-          ],
-          "base": "sat",
-          "display": "sBTC",
-          "name": "BTC pegged token on Side",
-          "symbol": "SBTC",
-          "uri": "",
-          "uri_hash": ""
-        }
-      ],
+      "denom_metadata": [],
       "send_enabled": []
     },
     "btcbridge": {
       "params": {
         "confirmations": 6,
-        "max_acceptable_block_depth": "0",
+        "max_acceptable_block_depth": "100",
         "btc_voucher_denom": "sat",
         "deposit_enabled": true,
         "withdraw_enabled": true,
-        "trusted_non_btc_relayers": [
-          "bc1quy793d7p3r9qvcupfzp6j9yzateqsvpvmavsxr",
-          "bc1qq6yqtqsxhxjzxjsvmp5luxh5p5tt9j6kpvpn6n",
-          "bc1qqv2durxvr8dmadsw664ln03wvxtt7a3mh03kcu"
-        ],
-        "trusted_btc_relayers": [
-          "bc1quy793d7p3r9qvcupfzp6j9yzateqsvpvmavsxr",
-          "bc1qq6yqtqsxhxjzxjsvmp5luxh5p5tt9j6kpvpn6n",
-          "bc1qqv2durxvr8dmadsw664ln03wvxtt7a3mh03kcu"
-        ],
-        "trusted_fee_providers": [
-          "bc1quy793d7p3r9qvcupfzp6j9yzateqsvpvmavsxr",
-          "bc1qq6yqtqsxhxjzxjsvmp5luxh5p5tt9j6kpvpn6n",
-          "bc1qqv2durxvr8dmadsw664ln03wvxtt7a3mh03kcu"
-        ],
+        "trusted_btc_relayers": [],
+        "trusted_non_btc_relayers": [],
+        "trusted_fee_providers": [],
         "fee_rate_validity_period": "100",
         "vaults": [],
         "withdraw_params": {
@@ -107,14 +70,14 @@
           "max_btc_batch_withdraw_num": 100
         },
         "protocol_limits": {
-          "btc_min_deposit": "100000",
-          "btc_min_withdraw": "100000",
+          "btc_min_deposit": "50000",
+          "btc_min_withdraw": "30000",
           "btc_max_withdraw": "500000000"
         },
         "protocol_fees": {
-          "deposit_fee": "4000",
-          "withdraw_fee": "6000",
-          "collector": "bc1p95u47ft0rtzqacpdz7gpaau95y2vqc9kgmklqx9x85hq4rt48zgs9293eg"
+          "deposit_fee": "8000",
+          "withdraw_fee": "12000",
+          "collector": "side10d07y265gmmuvt4z0w9aw880jnsr700jwrwlg5"
         },
         "tss_params": {
           "dkg_timeout_period": "86400s",
@@ -122,15 +85,15 @@
         }
       },
       "best_block_header": {
-        "version": "710926336",
-        "hash": "0000000000000000000320283a032748cef8227873ff4872689bf23f1cda83a5",
-        "height": "840000",
-        "previous_block_hash": "0000000000000000000172014ba58d66455762add0512355ad651207918494ab",
-        "merkle_root": "031b417c3a1828ddf3d6527fc210daafcc9218e81f98257f88d4d43bd7a5894f",
-        "nonce": "3932395645",
-        "bits": "17034219",
-        "time": "1713571767",
-        "ntx": "3050"
+        "version": "667459584",
+        "hash": "0000000000000009fb68da72e8994f014fafb455c72978233b94580b12af778c",
+        "height": "2815023",
+        "previous_block_hash": "0000000000000004a29c20eb32532718de8072665620edb4c657b22b4d463967",
+        "merkle_root": "9e219423eadce80e882cdff04b3026c9bbc994fd08a774f34a705ca3e710a332",
+        "nonce": "3913166971",
+        "bits": "191881b8",
+        "time": "1715566066",
+        "ntx": "6236"
       },
       "block_headers": [],
       "utxos": [],
@@ -140,9 +103,10 @@
       "index": "1",
       "owners": []
     },
+    "consensus": null,
     "crisis": {
       "constant_fee": {
-        "denom": "uside",
+        "denom": "stake",
         "amount": "1000"
       }
     },
@@ -179,34 +143,30 @@
       "deposits": [],
       "votes": [],
       "proposals": [],
-      "deposit_params": {
-        "min_deposit": [
-          {
-            "denom": "uside"
-          }
-        ]
-      },
+      "deposit_params": null,
+      "voting_params": null,
+      "tally_params": null,
       "params": {
         "min_deposit": [
           {
-            "denom": "uside",
-            "amount": "5000000000"
+            "denom": "stake",
+            "amount": "10000000"
           }
         ],
         "max_deposit_period": "172800s",
-        "voting_period": "432000s",
+        "voting_period": "172800s",
         "quorum": "0.334000000000000000",
         "threshold": "0.500000000000000000",
         "veto_threshold": "0.334000000000000000",
-        "min_initial_deposit_ratio": "0.200000000000000000",
+        "min_initial_deposit_ratio": "0.000000000000000000",
         "proposal_cancel_ratio": "0.500000000000000000",
         "proposal_cancel_dest": "",
         "expedited_voting_period": "86400s",
-        "expedited_threshold": "0.510000000000000000",
+        "expedited_threshold": "0.667000000000000000",
         "expedited_min_deposit": [
           {
-            "denom": "uside",
-            "amount": "50000000000"
+            "denom": "stake",
+            "amount": "50000000"
           }
         ],
         "burn_vote_quorum": false,
@@ -290,25 +250,26 @@
     },
     "mint": {
       "minter": {
-        "inflation": "0.050000000000000000",
+        "inflation": "0.130000000000000000",
         "annual_provisions": "0.000000000000000000"
       },
       "params": {
-        "mint_denom": "uside",
-        "inflation_rate_change": "1.000000000000000000",
+        "mint_denom": "stake",
+        "inflation_rate_change": "0.130000000000000000",
         "inflation_max": "0.200000000000000000",
-        "inflation_min": "0.020000000000000000",
+        "inflation_min": "0.070000000000000000",
         "goal_bonded": "0.670000000000000000",
         "blocks_per_year": "6311520"
       }
     },
+    "params": null,
     "slashing": {
       "params": {
-        "signed_blocks_window": "20000",
+        "signed_blocks_window": "100",
         "min_signed_per_window": "0.500000000000000000",
         "downtime_jail_duration": "600s",
         "slash_fraction_double_sign": "0.050000000000000000",
-        "slash_fraction_downtime": "0.000000000000000000"
+        "slash_fraction_downtime": "0.010000000000000000"
       },
       "signing_infos": [],
       "missed_blocks": []
@@ -319,8 +280,8 @@
         "max_validators": 100,
         "max_entries": 7,
         "historical_entries": 10000,
-        "bond_denom": "uside",
-        "min_commission_rate": "0.050000000000000000"
+        "bond_denom": "stake",
+        "min_commission_rate": "0.000000000000000000"
       },
       "last_total_power": "0",
       "last_validator_powers": [],
