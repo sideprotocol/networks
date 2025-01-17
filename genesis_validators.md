@@ -14,8 +14,8 @@ After Gentxs are collected we will provide a genesis.json file for review. As lo
 **Recommended minimum hardware requirements:**
 
 -   4 or more physical CPU cores
--   At least 200GB of SSD disk storage
--   At least 8GB of memory
+-   At least 500GB of SSD disk storage
+-   At least 16GB of memory
 -   At least 100mbps network bandwidth
 
 
@@ -74,9 +74,8 @@ sided keys add <KEY_NAME> --recover --key-type segwit
 
 ```sh
 cd ~/.side/config
-wget https://raw.githubusercontent.com/sideprotocol/networks/main/sidechain-1/pre-genesis.json
-rm genesis.json
-mv pre-genesis.json genesis.json 
+rm genesis.json 
+wget https://github.com/sideprotocol/networks/raw/main/sidechain-1/pre-genesis.json -O genesis.json
 ```
 Make sure your validator account is in the genesis file.
 
