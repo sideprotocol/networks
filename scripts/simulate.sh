@@ -108,7 +108,7 @@ else
     ./build/sided genesis validate-genesis --home $APP_HOME
 
     echo "..........Starting node......."
-    ./build/sided start --home $APP_HOME &
+    ./build/sided start --home $APP_HOME --minimum-gas-prices 1uside &
 
     sleep 18s
 
