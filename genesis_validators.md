@@ -59,10 +59,11 @@ sided init <NODE_NAME> --chain-id=sidechain-1
 2. Import validator key pair:
 You should use the validator key or mnemonic from the testnet phase and import it into the current environment to create a genesis transaction. We have deposited appropriate Side token rewards into your validator address based on the node statistics from the testnet phase, which can be used to create a validator node for the mainnet.
 
+2.1. Import validator by private key:
 ```sh
 sided keys import-hex <KEY_NAME> <HEX> --key-type segwit
 ```
-
+2.2. Import validator by mnemonics:
 ```sh
 sided keys add <KEY_NAME> --recover --key-type segwit
 ```
