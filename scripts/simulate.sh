@@ -1,8 +1,8 @@
 #!/bin/sh
 APP_HOME="/tmp/sided$(date +%s)"
 RANDOM_KEY="randomosmosisvalidatorkey"
-CHAIN_ID=sidechain-1
-DENOM=uside
+CHAIN_ID="sidechain-1"
+DENOM="uside"
 MAXBOND=1000000 # 1 SIDE
 
 GENTX_FILE=$(find ./$CHAIN_ID/gentxs -iname "*.json")
@@ -51,7 +51,7 @@ else
     rm -rf side
     git clone https://github.com/sideprotocol/side.git
     cd side
-    git checkout v1.0.0
+    git checkout v1.0.0-rc.1
     make build
     chmod +x ./build/sided
 
