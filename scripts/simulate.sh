@@ -102,7 +102,7 @@ else
     cp ../$GENTX_FILE $APP_HOME/config/gentx/
 
     echo "..........Collecting gentxs......."
-    ./build/sided genesis collect-gentxs --home $APP_HOME > genesis.log
+    ./build/sided genesis collect-gentxs --home $APP_HOME > genesis.out
     # sed -i '/persistent_peers =/c\persistent_peers = ""' $APP_HOME/config/config.toml
 
     ./build/sided genesis validate-genesis --home $APP_HOME
