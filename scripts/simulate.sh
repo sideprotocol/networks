@@ -87,8 +87,8 @@ else
         exit 1
     fi
 
-    ./build/sided genesis add-genesis-account $GENACC $amountquery$DENOM --home $APP_HOME \
-        --keyring-backend test
+    #./build/sided genesis add-genesis-account $GENACC $amountquery$DENOM --home $APP_HOME \
+    #    --keyring-backend test
 
     ./build/sided genesis add-genesis-account $RANDOM_KEY 10000000000000000$DENOM --home $APP_HOME \
         --keyring-backend test
