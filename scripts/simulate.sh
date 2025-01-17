@@ -55,7 +55,7 @@ else
     make build
     chmod +x ./build/sided
 
-    ./build/sided keys add $RANDOM_KEY --keyring-backend test --home $APP_HOME
+    ./build/sided keys add $RANDOM_KEY --keyring-backend test --home $APP_HOME --key-type segwit
 
     ./build/sided init --chain-id $CHAIN_ID validator --home $APP_HOME
 
