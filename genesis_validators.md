@@ -18,6 +18,7 @@ After Gentxs are collected we will provide a genesis.json file for review. As lo
 -   At least 8GB of memory
 -   At least 100mbps network bandwidth
 
+
 # Part 1 
 
 These instructions are for creating a basic setup of a single node. Validators should modify these instructions for their own custom setups as needed.
@@ -59,18 +60,28 @@ sided init <NODE_NAME> --chain-id=sidechain-1
 2. Import validator key pair:
 You should use the validator key or mnemonic from the testnet phase and import it into the current environment to create a genesis transaction. We have deposited appropriate Side token rewards into your validator address based on the node statistics from the testnet phase, which can be used to create a validator node for the mainnet.
 
-2.1. Import validator by private key:
 ```sh
+// Import validator by private key:
 sided keys import-hex <KEY_NAME> <HEX> --key-type segwit
 ```
-2.2. Import validator by mnemonics:
+
 ```sh
+// Import validator by mnemonics:
 sided keys add <KEY_NAME> --recover --key-type segwit
 ```
 
-3. Make sure your validator account is in the pre-genesis file.
+3. Replace the genesis.json file with pre-genesis.json.
 
-4. Create the Gentx. The `sided genesis gentx -h` command will provide helpful flags to configure your validator node. 
+```sh
+cd ~/.side/config
+wget https://raw.githubusercontent.com/sideprotocol/networks/main/sidechain-1/pre-genesis.json
+rm genesis.json
+mv pre-genesis.json genesis.json 
+```
+Make sure your validator account is in the genesis file.
+
+4. Create the Gentx. 
+The `sided genesis gentx -h` command will provide helpful flags to configure your validator node. 
 
 ```sh
 sided genesis gentx <KEY_NAME> --chain-id=sidechain-1 1000000uside
