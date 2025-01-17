@@ -35,7 +35,6 @@ else
     else
         echo "Gentx is now open"
         echo "start=$stTime:curent=$curTime:endTime=$endTime"
-        exit 1
     fi
 fi
 
@@ -104,7 +103,7 @@ else
     cp ../$GENTX_FILE $APP_HOME/config/gentx/
 
     echo "..........Collecting gentxs......."
-    ./build/sided genesis collect-gentxs --home $APP_HOME
+    ./build/sided genesis collect-gentxs --home $APP_HOME > genesis.out
     # sed -i '/persistent_peers =/c\persistent_peers = ""' $APP_HOME/config/config.toml
 
     ./build/sided genesis validate-genesis --home $APP_HOME
