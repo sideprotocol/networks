@@ -147,7 +147,7 @@
         },
         "protocol_fees": {
           "deposit_fee": "4000",
-          "withdraw_fee": "4000",
+          "withdraw_fee": "6000",
           "collector": "bc1p95u47ft0rtzqacpdz7gpaau95y2vqc9kgmklqx9x85hq4rt48zgs9293eg"
         },
         "tss_params": {
