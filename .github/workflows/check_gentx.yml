@@ -12,6 +12,6 @@ jobs:
         uses: dcarbone/install-jq-action@v2
       - uses: actions/checkout@v2
       - name: add permission
-        run: chmod +x ./scripts/validate-gentx.sh
+        run: chmod +x ./scripts/simulate.sh
       - name: Validating...
         run: ./scripts/simulate.sh
