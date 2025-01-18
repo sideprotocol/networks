@@ -122,7 +122,7 @@ git clone https://github.com/<your-github-username>/networks && cd networks
 4. Copy the generated gentx json file to `/mainnet/sidechain-1/gentxs/`:
 
 ```bash
-cp ~/.side/config/gentx/gentx*.json ./mainnet/sidechain-1/gentx/
+cp ~/.side/config/gentx/gentx*.json ./mainnet/sidechain-1/gentxs/
 ```
 
 5. Commit and push to your repo:
