@@ -59,8 +59,8 @@ Returns:
 sided init <NODE_NAME> --chain-id=sidechain-1
 ```
 
-2. Import validator key pair:
-You should use the validator key or mnemonic from the testnet phase and import it into the current environment to create a genesis transaction. We have deposited appropriate Side token rewards into your validator address based on the node statistics from the testnet phase, which can be used to create a validator node for the mainnet.
+2. Import Wallet:
+You can create a wallet using the mnemonic from which you claimed rewards on testnets or any key with a balance greater than 1 SIDE in the `pre-genesis.json` file.
 
 ```sh
 // Import validator by private key:
@@ -72,6 +72,8 @@ sided keys import-hex <KEY_NAME> <HEX> --key-type segwit
 sided keys add <KEY_NAME> --recover --key-type segwit
 ```
 
+Note: You can replace `segwit` with `taproot` if your account uses a taproot address.
+
 3. Replace the genesis.json file with pre-genesis.json.
 
 ```sh
@@ -79,8 +81,6 @@ cd ~/.side/config
 rm genesis.json 
 wget https://github.com/sideprotocol/networks/raw/main/mainnet/sidechain-1/pre-genesis.json -O genesis.json
 ```
-Make sure your validator account is in the genesis file.
-Note: <If your address is not found, the following command will fail.>
 
 5. Create the Gentx. 
 The `sided genesis gentx -h` command will provide helpful flags to configure your validator node. 
@@ -91,7 +91,7 @@ sided genesis gentx <KEY_NAME> 1000000uside \
   --moniker=<MONIKER> \
   --website="<webside>" \
   --details="<DETAILS>" \
-  --commission-rate="0.1" \
+  --commission-rate="0.05" \
   --commission-max-rate="0.20" \
   --commission-max-change-rate="0.01" \
   --min-self-delegation="1" \
@@ -99,7 +99,8 @@ sided genesis gentx <KEY_NAME> 1000000uside \
   --pubkey="$(sided comet show-validator)"
 ```
 
-If all goes well, you will see a message similar to the following:
+<br>If your address is not found in `pre-genesis.json`, the command will fail.
+<br>If successful, you will see a message similar to the following:
 
 ```bash
 Genesis transaction written to "/home/user/.side/config/gentx/gentx-******.json"
@@ -122,7 +123,7 @@ git clone https://github.com/<your-github-username>/networks && cd networks
 4. Copy the generated gentx json file to `/mainnet/sidechain-1/gentxs/`:
 
 ```bash
-cp ~/.side/config/gentx/gentx*.json ./mainnet/sidechain-1/gentx/
+cp ~/.side/config/gentx/gentx*.json ./mainnet/sidechain-1/gentxs/
 ```
 
 5. Commit and push to your repo:
