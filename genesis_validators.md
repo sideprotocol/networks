@@ -2,7 +2,7 @@
 
 We are excited to announce the upcoming genesis process for the Side Chain mainnet. Thank you for joining as a genesis validator. Below are instructions for submitting your GenTx and starting the network.
 
-To ensure seamless coordination, the #genesis-mainnet channel on our [Side Protocol Discord](https://discord.gg/sideprotocol) will serve as the primary communication hub. The channel is private—please contact Sally on Discord to gain access. Joining Discord during this period is crucial, as it will be the central platform for updates and issue resolution throughout the launch process.
+To ensure seamless coordination, the #genesis-validator channel on our [Side Protocol Discord](https://discord.gg/sideprotocol) will serve as the primary communication hub. The channel is private—please contact Sally (@luckysy0001) on Discord to gain access. Joining Discord during this period is crucial, as it will be the central platform for updates and issue resolution throughout the launch process.
 
 #### The deadline for submitting your GenTx PR is Thursday, Jan 23, 2025, at 13:00 UTC.
 
