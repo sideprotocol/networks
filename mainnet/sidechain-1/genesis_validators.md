@@ -99,8 +99,8 @@ sided genesis gentx <KEY_NAME> 1000000uside \
   --pubkey="$(sided comet show-validator)"
 ```
 
-If your address is not found, the command will fail.
-If successful, you will see a message similar to the following:
+<br>If your address is not found in `pre-genesis.json`, the command will fail.
+<br>If successful, you will see a message similar to the following:
 
 ```bash
 Genesis transaction written to "/home/user/.side/config/gentx/gentx-******.json"
