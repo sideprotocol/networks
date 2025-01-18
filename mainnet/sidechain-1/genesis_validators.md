@@ -72,6 +72,8 @@ sided keys import-hex <KEY_NAME> <HEX> --key-type segwit
 sided keys add <KEY_NAME> --recover --key-type segwit
 ```
 
+Note: You can replace `segwit` with `taproot` if your account uses a taproot address.
+
 3. Replace the genesis.json file with pre-genesis.json.
 
 ```sh
