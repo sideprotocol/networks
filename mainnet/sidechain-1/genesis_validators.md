@@ -60,7 +60,7 @@ sided init <NODE_NAME> --chain-id=sidechain-1
 ```
 
 2. Import Wallet:
-You can create a wallet using the mnemonic from which you claimed rewards on testnets or any key with a balance greater than 1 SIDE in the genesis file.
+You can create a wallet using the mnemonic from which you claimed rewards on testnets or any key with a balance greater than 1 SIDE in the `pre-genesis.json` file.
 
 ```sh
 // Import validator by private key:
