@@ -8,8 +8,8 @@ To ensure seamless coordination, the #genesis-validator channel on our [Side Pro
 
 #### The pre-genesis event is broken into two parts:
 
--   [Part 1](/genesis_validators.md#part-1): Preparing gentx
--   [Part 2](/genesis_validators.md#part-2): Submitting gentx PR
+-   [Part 1](/mainnet/sidechain-1/genesis_validators.md#part-1): Preparing gentx
+-   [Part 2](/mainnet/sidechain-1/genesis_validators.md#part-2): Submitting gentx PR
 
 After collecting all GenTx submissions, we will share the genesis.json file for review. If no changes are recommended during the review period, the finalized Genesis file will be released shortly after.
 
@@ -77,11 +77,12 @@ sided keys add <KEY_NAME> --recover --key-type segwit
 ```sh
 cd ~/.side/config
 rm genesis.json 
-wget https://github.com/sideprotocol/networks/raw/main/sidechain-1/pre-genesis.json -O genesis.json
+wget https://github.com/sideprotocol/networks/raw/main/mainnet/sidechain-1/pre-genesis.json -O genesis.json
 ```
 Make sure your validator account is in the genesis file.
+Note: <If your address is not found, the following command will fail.>
 
-4. Create the Gentx. 
+5. Create the Gentx. 
 The `sided genesis gentx -h` command will provide helpful flags to configure your validator node. 
 
 ```sh
@@ -95,7 +96,7 @@ sided genesis gentx <KEY_NAME> 1000000uside \
   --commission-max-change-rate="0.01" \
   --min-self-delegation="1" \
   --identity="<IDENTITY>" \
-  --pubkey="<PUBKEY>"
+  --pubkey="$(sided comet show-validator)"
 ```
 
 If all goes well, you will see a message similar to the following:
@@ -115,15 +116,13 @@ Genesis transaction written to "/home/user/.side/config/gentx/gentx-******.json"
 3. Clone your repo using:
 
 ```bash
-git clone https://github.com/<your-github-username>/networks
-cd networks
+git clone https://github.com/<your-github-username>/networks && cd networks
 ```
 
-4. Copy the generated gentx json file to `/sidechain-1/gentxs/`:
+4. Copy the generated gentx json file to `/mainnet/sidechain-1/gentxs/`:
 
 ```bash
-cd sidechain-1
-cp ~/.side/config/gentx/gentx*.json ./gentx/
+cp ~/.side/config/gentx/gentx*.json ./mainnet/sidechain-1/gentx/
 ```
 
 5. Commit and push to your repo:
