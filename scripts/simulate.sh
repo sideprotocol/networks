@@ -62,7 +62,7 @@ else
 
     echo "..........Fetching genesis......."
     rm -rf $APP_HOME/config/genesis.json
-    curl -s https://raw.githubusercontent.com/sideprotocol/networks/main/$CHAIN_ID/pre-genesis.json >$APP_HOME/config/genesis.json
+    curl -s https://raw.githubusercontent.com/sideprotocol/networks/main/mainnet/$CHAIN_ID/pre-genesis.json >$APP_HOME/config/genesis.json
 
     # this genesis time is different from original genesis time, just for validating gentx.
     sed -i '/genesis_time/c\   \"genesis_time\" : \"2025-01-01T00:00:00Z\",' $APP_HOME/config/genesis.json
