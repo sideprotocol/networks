@@ -85,7 +85,17 @@ Make sure your validator account is in the genesis file.
 The `sided genesis gentx -h` command will provide helpful flags to configure your validator node. 
 
 ```sh
-sided genesis gentx <KEY_NAME> --chain-id=sidechain-1 1000000uside
+sided genesis gentx <KEY_NAME> 1000000uside \
+  --chain-id="sidechain-1" \
+  --moniker=<MONIKER> \
+  --website="<webside>" \
+  --details="<DETAILS>" \
+  --commission-rate="0.1" \
+  --commission-max-rate="0.20" \
+  --commission-max-change-rate="0.01" \
+  --min-self-delegation="1" \
+  --identity="<IDENTITY>" \
+  --pubkey="<PUBKEY>"
 ```
 
 If all goes well, you will see a message similar to the following:
