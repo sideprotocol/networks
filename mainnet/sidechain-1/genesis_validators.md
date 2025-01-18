@@ -91,7 +91,7 @@ sided genesis gentx <KEY_NAME> 1000000uside \
   --moniker=<MONIKER> \
   --website="<webside>" \
   --details="<DETAILS>" \
-  --commission-rate="0.1" \
+  --commission-rate="0.05" \
   --commission-max-rate="0.20" \
   --commission-max-change-rate="0.01" \
   --min-self-delegation="1" \
