@@ -5,7 +5,7 @@ CHAIN_ID="sidechain-1"
 DENOM="uside"
 MAXBOND=1000000 # 1 SIDE
 
-GENTX_FILE=$(find ./$CHAIN_ID/gentxs -iname "*.json")
+GENTX_FILE=$(find .mainnet/$CHAIN_ID/gentxs -iname "*.json")
 LEN_GENTX=$(echo ${#GENTX_FILE})
 
 # Gentx Start date
