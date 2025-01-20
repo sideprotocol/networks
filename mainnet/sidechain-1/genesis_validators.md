@@ -78,11 +78,16 @@ sided keys add <KEY_NAME> --recover --key-type segwit
 cd ~/.side/config
 rm genesis.json 
 wget https://github.com/sideprotocol/networks/raw/main/mainnet/sidechain-1/pre-genesis.json -O genesis.json
+shasum genesis.json
+```
+Returns:
+```
+f53faaa66fc6f06b26601e5fce79935894a930f9  genesis.json
 ```
 Make sure your validator account is in the genesis file.
 Note: <If your address is not found, the following command will fail.>
 
-5. Create the Gentx. 
+4. Create the Gentx. 
 The `sided genesis gentx -h` command will provide helpful flags to configure your validator node. 
 
 ```sh
