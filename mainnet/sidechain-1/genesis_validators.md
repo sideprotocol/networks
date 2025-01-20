@@ -30,8 +30,8 @@ These instructions are for creating a basic setup of a single node. Validators s
 ### Install Side Chain:
 
 ```sh
-git clone https://github.com/sideprotocol/side.git
 cd side
+git clone https://github.com/sideprotocol/side.git
 git checkout v1.0.0-rc.1
 make install
 ```
