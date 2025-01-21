@@ -32,6 +32,7 @@ These instructions are for creating a basic setup of a single node. Validators s
 ```sh
 git clone https://github.com/sideprotocol/side.git
 cd side
+git fetch
 git checkout v1.0.0-rc.1
 make install
 ```
