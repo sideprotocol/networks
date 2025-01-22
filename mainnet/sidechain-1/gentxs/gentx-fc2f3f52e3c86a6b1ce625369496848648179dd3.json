@@ -24,7 +24,7 @@
         },
         "value": {
           "denom": "uside",
-          "amount": "10000000000"
+          "amount": "1000000"
         }
       }
     ],
@@ -57,6 +57,6 @@
     "tip": null
   },
   "signatures": [
-    "Hzc5AEJ9+6h/E9z8XPvpAampKPSqWnb0cOMQr9k2WbwFB25mDdxW7sDLj3CEiCG8fx/2BgpTozD4MxQzq3r2gMU="
+    "ICrfCS+zwmpCx03b1MFL5tUvxTfoDcY01fv47rHkaboIWCQa9idAJqomOD7jn8bB1juGV9Jw9sGR+VI/HFm3Z0E="
   ]
 }
