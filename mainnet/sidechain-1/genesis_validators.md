@@ -84,7 +84,7 @@ shasum genesis.json
 ```
 Returns:
 ```
-f53faaa66fc6f06b26601e5fce79935894a930f9  genesis.json
+31ca17d01fccbb980c54e7a8cd6a6d99988b6231  genesis.json
 ```
 
 4. Create the Gentx. 
