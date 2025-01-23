@@ -22,7 +22,7 @@
           "@type": "/cosmos.crypto.ed25519.PubKey",
           "key": "Rrqcaalx+twsAltHpSXGzm4b9gCsC/1DHNTYBbZ5FTU="
         },
-        "value": { "denom": "uside", "amount": "65459000000" }
+        "value": { "denom": "uside", "amount": "1000000" }
       }
     ],
     "memo": "7e9b143f8f5e22a7ae431a63ac311b2a754f2e29@10.42.44.218:26656",
@@ -45,6 +45,6 @@
     "tip": null
   },
   "signatures": [
-    "Hzd2FlEjZxROw3j/csCyxSO2uaqe6LrD/ax6TQRc021ABViJkTBukmICfjqZP1ES1ORthuN/iDwjI7EAkz4eGLs="
+    "IHGv8vTkkuoRUyQYr9Xq0YZ2ISw4hi+6wCI4+gHRPmJLdmM64kQuLPi8VAiJx3B3CnxAlQ+0Fwrl4zWsy+vBSGQ="
   ]
 }
