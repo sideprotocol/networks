@@ -87,17 +87,13 @@ The format of the peer address is like this:
 /ip4/<IP>/tcp/<PORT>/p2p/<PEER ID>
 ```
 
-The `local peer id` can be retrieved as the following command:
-
-```
-shuttler --home <home> id
-```
-
 The seed node provided by Side Labs is as following:
 
 ```
 <will be published>
 ```
+
+**Note**: The single seed node is sufficient.
 
 3. Set the validator key
 
