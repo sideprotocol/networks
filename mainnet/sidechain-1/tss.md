@@ -104,7 +104,7 @@ priv_validator_key_path = "<validator key path>"
 ```
 
 The validator key is required to participate the DKG.
-The item should be set to the correct location which is commonly the *.side/config/priv_validator_key.json* in the home directory.
+The item should be set to the correct location which is commonly `$HOME/.side/config/priv_validator_key.json`.
 
 **Note**: **TMS is not supported currently.**
 
