@@ -94,7 +94,9 @@ sided start
 sided start --minimum-gas-prices=0.0006uside,0.000001sat
 ```
 
-### Validating 
+### Validating
+
+> Note: The step is not required for genesis validator.
 
 1. Create the validator address
 
