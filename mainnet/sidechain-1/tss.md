@@ -73,6 +73,8 @@ The *home* directory can be replaced by your choice.
 
 You can specify the port by `--port`. The default port is `5158`.
 
+**Note**: The configuration file is located at `<home>/config.toml`.
+
 2. Set the bootstrapping nodes
 
 ```
@@ -186,6 +188,8 @@ The TSS node can be started by the different modes or roles: *`signer`* and *`re
 **Only signer mode is required to participate DKG and sign transactions.**
 
 **If there is operational and synced Bitcoin full node, the relayer mode can be enabled.**
+
+**The TSS node can be started ahead of the Side Chain node.**
 
 1. Start as signer (**Recommended**)
 
