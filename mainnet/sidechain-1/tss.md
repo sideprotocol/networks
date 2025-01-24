@@ -53,8 +53,6 @@ git checkout v1.0.0
 cargo build --release
 ```
 
-**Note:** v1.0.0 will be released soon.
-
 The binary can be placed into the bin directory of Cargo for convenience.
 
 ```
@@ -142,13 +140,13 @@ The setting can be adjusted by demand, e.g. when `out of gas` occurred.
 
 ```
 [bitcoin]
-network = "<network name>"
+network = "bitcoin"
 rpc = "<rpc endpoint>"
 user = "<rpc username>"
 password = "<rpc password>"
 ```
 
-*Note*: **Required only by relayers**
+*Note*: **Required only by relayers; Set `rpc` to empty if not needed.**
 
 For relayers, the bitcoin node rpc is required to sync the bitcoin block headers and relay the bridge related transactions between the Bitcoin and Side Chain.
 
