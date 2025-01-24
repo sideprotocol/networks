@@ -71,7 +71,7 @@ shasum -a 256 ~/.side/config/genesis.json
 
 Expected output:
 ```
-349826a41d30264578103c1fe70e87b6d5f7c5a1a8427625b7b515da70f3e05b  genesis.json
+c150300d4dccd0439414a5ee944eadb3a0849a680463131cb81a41a90fba33ac  genesis.json
 ```
 
 3. Set up the persistent peer:
@@ -79,7 +79,7 @@ Expected output:
 Set `persistent_peers` in `<home>/config/app.toml` to the following peer:
 
 ```sh
-be531d2ed3841378fe7106d92ed4cc6a9c4b11be@192.248.180.245:26656
+0ca21af519767961a10a9b96a10ebcbc8ab7b5e6@209.250.232.135:26656
 ```
 
 4. Start node:
@@ -96,7 +96,7 @@ sided start --minimum-gas-prices=0.0006uside,0.000001sat
 
 ### Validating 
 
-1. Create operator address
+1. Create the validator address
 
 ```sh
 sided keys add <key name> --key-type=<key type>
