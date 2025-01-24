@@ -92,7 +92,7 @@ The format of the peer address is like this:
 The seed node provided by Side Labs is as following:
 
 ```
-<will be published>
+/ip4/192.248.191.173/tcp/5158/p2p/12D3KooWQ4uVSfaPh5MKhrUoabnxm87ysutaNLjua73DjHa5uymt
 ```
 
 **Note**: The single seed node is sufficient.
