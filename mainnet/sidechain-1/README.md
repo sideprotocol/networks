@@ -137,5 +137,5 @@ sided comet show-validator
 Create validator with the specified path:
 
 ```sh
-sided tx staking create-validator <path/to/validator> --from <KEY_NAME> --chain-id sidechain-1 --fees 1000uside
+sided tx staking create-validator <path/to/validator.json> --from <KEY_NAME> --chain-id sidechain-1 --fees 1000uside
 ```
