@@ -9,14 +9,14 @@
             "operator_address": "sidevaloper1qq9svrs5r5d37rqrrvqpsqc6ruxq5qc4zcwsgps8qyzq2zcgryq3wld0y9f"
         },
         {
-            "consensus_pubkey": "78aOo36KG89+f5cm7CZUTydNo/03n36s4N5aWmb8XCw=",
+            "consensus_pubkey": "wp8lFwbSHoHveDHqsRCK8hB1dLd7z1Kxb8nOzE/8Lrw=",
             "moniker": "side2",
-            "operator_address": "sidevaloper1qqpsgyggqcyqqxc5zgpp7yq8zv8q5yqdpurqxpsgp5rs69gkz59qcys875a"
+            "operator_address": "sidevaloper1qqgqg8c2zcvpxpckqvwq58s0zutqvyqdrgdpk8qgzyqqsps9rv8358udfl2"
         },
         {
-            "consensus_pubkey": "xOIyPyaCXGRH6xvVmQhgHYPSs6gUn2B7g0dtNhkltPU=",
+            "consensus_pubkey": "rpsiu7nyvaH0jpydQRowR4uRfGmJUxY3s6fh44bU3tI=",
             "moniker": "side3",
-            "operator_address": "sidevaloper1qqxsgxgkpyd3jxsgquwqsysrpgtsvpcazuzq2xg5pvy3c9sepg8s5dw8clj"
+            "operator_address": "sidevaloper1qqqqjpqwqypp7qcqz58p28skpv9s28crz5qsvyg0ryvqc8q8rs2pj4xj6ff"
         }
     ],
     "status": "DKG_REQUEST_STATUS_PENDING",
