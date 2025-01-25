@@ -74,13 +74,15 @@ Expected output:
 469bb84bbd261c4d39c816cbea6966c6169804629cf3a4d177f66f48818ea75b  genesis.json
 ```
 
-3. Set up the persistent peer:
+3. Set up the persistent peers:
 
 Set `persistent_peers` in `<home>/config/config.toml` to the following peer:
 
 ```sh
 0ca21af519767961a10a9b96a10ebcbc8ab7b5e6@209.250.232.135:26656
 ```
+
+> Tip: More peers can be found through [Community Peers](https://itrocket.net/services/mainnet/side/#peers).
 
 4. Start node:
 
