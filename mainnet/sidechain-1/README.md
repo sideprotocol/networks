@@ -76,7 +76,7 @@ Expected output:
 
 3. Set up the persistent peer:
 
-Set `persistent_peers` in `<home>/config/app.toml` to the following peer:
+Set `persistent_peers` in `<home>/config/config.toml` to the following peer:
 
 ```sh
 0ca21af519767961a10a9b96a10ebcbc8ab7b5e6@209.250.232.135:26656
